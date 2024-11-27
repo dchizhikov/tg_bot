@@ -1,2 +1,2 @@
-# Git
-Команды для Git
+# Tg Bot
+Telegram Bot.
