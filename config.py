@@ -18,5 +18,5 @@ public_token = os.environ["public_token"]
 #private_token = os.environ["PAT"]
 _token = public_token #[public_token, private_token]
 
-branch = "origin_479F"
+branch = "origin_tg_479F"
 remote_branch = "main"
