@@ -5,9 +5,7 @@ import telebot
 def my_function():
   print("Привет из отдельного модуля!")
 
-def bot_polling():
-  # Замените 'YOUR_BOT_TOKEN' на токен, полученный от BotFather
-  bot_token = os.environ['bot_token']
+def bot_polling(bot_token):
   bot = telebot.TeleBot(bot_token)
   
   
