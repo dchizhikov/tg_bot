@@ -12,7 +12,7 @@ print(folder_modules_path)
 sys.path.append(repo_up+'/'+repo_name)
 sys.path.append(folder_modules_path)
 
-#os.system('pip install pyTelegramBotAPI')
+os.system('pip install pyTelegramBotAPI')
 
 print("Начало")
 modules_list = [os.path.splitext(file)[0] for file in os.listdir(folder_modules_path) if file.endswith('.py')]
