@@ -28,7 +28,8 @@ for module in modules_list:
 gc = imported_modules['git_com']
 tg = imported_modules['tg_neuro_net_bot']
 
-bot_token = sys.argv[3]
+bot_token = sys.argv[2]
+print("bot_token", bot_token)
 tg.my_function()
 tg.bot_polling(bot_token)
 print("Конец")
