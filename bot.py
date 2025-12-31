@@ -7,7 +7,10 @@ TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Отдельные функции логики бота
 async def handle_start(chat_id: int):
-    return "🤖 Render бот готов!"
+    return "Мама, привет!\n🤖 Render бот готов!"
+
+async def handle_2026(chat_id: int):
+    return "Мама, с Новым годом!\nЗдоровья и поменьше волнений!"
 
 async def handle_echo(text: str):
     return f"Эхо: {text}"
@@ -30,6 +33,8 @@ async def webhook(request: Request):
         # Логика в отдельных функциях
         if text == '/start':
             reply = await handle_start(chat_id)
+        elif text == '/2026':
+            reply = await handle_2026(chat_id)
         else:
             reply = await handle_echo(text)
         
