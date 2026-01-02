@@ -1,3 +1,5 @@
+
+#%%writefile {file_path}
 from fastapi import FastAPI, Request
 import httpx, os
 from telegram import Update  # из python-telegram-bot
