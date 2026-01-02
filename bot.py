@@ -1,4 +1,3 @@
-#%%writefile {file_path}
 from fastapi import FastAPI, Request
 import httpx, os
 from telegram import Update  # из python-telegram-bot
@@ -11,7 +10,7 @@ async def handle_start(chat_id: int):
     return "Мама, привет!\n🤖 Render бот готов!"
 
 async def handle_2026(chat_id: int):
-    return "Мама, с Новым годом!\nЗдоровья и поменьше волнений!!!"
+    return "Мама, с Новым годом!\nЗдоровья и меньше волнений!!!"
 
 async def handle_echo(text: str):
     return f"Эхо: {text}"
